@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Трёхколоночный макет</title>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			[class*="col-"] {
+				background-color: #eee;
+				text-align: center;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+				font-size: 2rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+<!--
+			<div class="row">
+				<div class="col-xs-12">Заголовок</div>
+				<div class="col-xs-5" style="padding: 0;">
+					<div class="row" style="margin: 0;">
+						<div class="col-xs-12">Колонка 1</div>
+						<div class="col-xs-6">Колонка 1-1</div>
+						<div class="col-xs-6">Колонка 1-2</div>
+					</div>
+				</div>
+				<div class="col-xs-5 col-xs-offset-2">Колонка 2</div>
+			</div>
+-->
+
+			<div class="row">
+				<div class="col-xs-12 hidden-xs">Заголовок</div>
+				<div class="col-xs-12 col-sm-8 col-md-8">Колонка 1</div>
+				<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">Колонка 2</div>
+				<!--<div class="col-xs-12 visible-xs-block">Заголовок</div>-->
+			</div>
+   
+			<p class="text-muted">Серый цвет</p>
+			<p class="text-primary">Основной текст</p>
+			<p class="text-success">Цвет для сообщения об успехе</p>
+			<p class="text-info">Цвет для информации</p>
+			<p class="text-warning">Цвет для предупреждений</p>
+			<p class="text-danger">Цвет для сообщений об ошибках</p>
+
+			<p class="bg-primary">Основной текст</p>
+			<p class="bg-success">Цвет для сообщения об успехе</p>
+			<p class="bg-info">Цвет для информации</p>
+			<p class="bg-warning">Цвет для предупреждений</p>
+			<p class="bg-danger">Цвет для сообщений об ошибках</p>
+			
+			<div>
+				<h1>Борщ</h1>
+				<div class="pull-right bg-info" style="width: 20em; padding: 10px; margin: 0 0 10px 10px;">
+					<h2><small>Хозяйке на заметку</small></h2>
+					<p>Борщ получится вкуснее, если добавить в него немного соли.</p>
+				</div>
+				<p>Мясо отварить до готовности. Промыть свеклу, очистить, нарезать соломкой и тушить с помидорами до полуготовности.</p>
+				<p>Бульон процедить, мясо нарезать кусочками. В бульон добавить нарезанный дольками картофель, довести до кипения, опустить нарезанную соломкой свежую капусту и варить 10-15 минут, добавить пассерованные овощи, болгарский перец, нашинкованный тонкой соломкой, специи и довести до готовности.</p>
+				<p>Готовому борщу дать настояться в течение 20-25 минут. При подаче к столу добавить сметану, мясо, зелень.</p>
+			</div>
+			
+		</div>
+
+		<script src="bootstrap/jquery-3.3.1.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
