@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Трёхколоночный макет</title>
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--
 		<style>
 			[class*="col-"] {
 				background-color: #eee;
@@ -15,6 +16,7 @@
 				font-size: 2rem;
 			}
 		</style>
+-->
 	</head>
 
 	<body>
@@ -31,15 +33,17 @@
 				</div>
 				<div class="col-xs-5 col-xs-offset-2">Колонка 2</div>
 			</div>
--->
+
 
 			<div class="row">
 				<div class="col-xs-12 hidden-xs">Заголовок</div>
 				<div class="col-xs-12 col-sm-8 col-md-8">Колонка 1</div>
 				<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">Колонка 2</div>
-				<!--<div class="col-xs-12 visible-xs-block">Заголовок</div>-->
+				<div class="col-xs-12 visible-xs-block">Заголовок</div>
 			</div>
-   
+-->
+			<h1>Пример разметки текста</h1>
+			
 			<p class="text-muted">Серый цвет</p>
 			<p class="text-primary">Основной текст</p>
 			<p class="text-success">Цвет для сообщения об успехе</p>
@@ -79,7 +83,52 @@
 			 какие опасности подстерегали его на пути, кого он повстречал
 			 по дороге, какие приключения и испытания прошёл,
 			 и что он рассказал по возвращению домой.</p>
+		
+		
+			<hr>
+			<h2><small>Аббревиатура</small></h2>
+			<p><abbr title="Cascading Style Sheets, Каскадные таблицы стилей">CSS</abbr> — набор параметров форматирования, который применяется к элементам документа, чтобы изменить их внешний вид. </p>
+		
+			<hr>
+			<h2><small>Цитаты</small></h2>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h3><small>Равнение по левому краю</small></h3>
+					<blockquote>
+						<p>Нельзя сказать человеку: «Ты можешь творить. 
+						Так давай, твори». Гораздо вернее подождать, пока он 
+						сам не скажет: «Я могу творить, и я буду творить, хотите 
+						вы этого или нет».</p>
+						<p><small>Айзек Азимов</small></p>
+					</blockquote>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h3 class="pull-right"><small>Равнение по правому краю</small></h3>
+					<blockquote class="pull-right">
+						<p>Нельзя сказать человеку: «Ты можешь творить. 
+						Так давай, твори». Гораздо вернее подождать, пока он 
+						сам не скажет: «Я могу творить, и я буду творить, хотите 
+						вы этого или нет».</p>
+						<p><small>Айзек Азимов</small></p>
+					</blockquote>
+				</div>
+			</div>
 			
+
+			<hr>
+			<h2><small>Листинги</small></h2>
+			<p>Функция <code>checkParent()</code> вызывается с параметрами <var>src</var> и <var>dest</var>.</p>
+			<pre>
+				function checkParent (src, dest) 
+				{
+					while (src != null) 
+					{
+						if (src.tagName == dest) src = src.parentElement
+					}	
+					return null
+				}
+			</pre>
+		
 		</div>
 
 		<script src="bootstrap/jquery-3.3.1.js"></script>
